@@ -24,7 +24,7 @@ function genCards(){
 			let audio = new Audio('cards/' + element + '/a.mp3');
 			audio.volume = 0.2;
 			let c = new Card(img, audio);
-			c.innerElem.onmousedown = () => {selectCard(c)}
+			c.innerElem.onclick = () => {selectCard(c)}
 			allCards.push(c);
 		}
 	}
