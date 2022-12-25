@@ -110,8 +110,20 @@ class Card{
 	}
 }
 
+
+function setGrid(){
+	canv.style.gap = "" + 80 / frcount + "px";
+	
+	if(window.innerHeight < window.innerWidth){
+		canv.style.gridTemplateColumns = "1fr ".repeat(frcount);
+	}
+	else {
+		canv.style.gridTemplateColumns = "1fr ".repeat(filenames.length / frcount * 2);
+	}
+}
+
 genCards();
 updateAttempts();
 
-canv.style.gap = "" + 80 / frcount + "px";
-canv.style.gridTemplateColumns  = "1fr ".repeat(frcount);
+setGrid();
+addEventListener("resize", (event) => {setGrid();});
