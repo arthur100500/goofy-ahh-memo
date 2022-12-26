@@ -69,6 +69,8 @@ const variants = {
 	"6 pairs (⭐⭐)" : {width: 4, cards: all_filenames_shuffled.slice(0, 6)}, 
 	"8 pairs (⭐⭐⭐)" : {width: 4, cards: all_filenames_shuffled.slice(0, 8)},
 	"12 pairs (⭐⭐⭐⭐)" : {width: 6, cards: all_filenames_shuffled.slice(0, 12)},
+	"20 pairs (⭐⭐⭐⭐⭐)" : {width: 8, cards: all_filenames_shuffled.slice(0, 20)},
+	"23 pairs (⭐⭐⭐⭐⭐⭐)" : {width: 10, cards: all_filenames_shuffled.slice(0, 20)},
 	"4 pairs (last added) (⭐⭐)": {width: 4, cards: all_filenames.slice(Math.max(all_filenames.length - 4, 1))},
 	"osu maps (⭐⭐)": {width: 4, cards: ["harumachi", "lionheart", "bigblack", "glorydays"]},
 }
