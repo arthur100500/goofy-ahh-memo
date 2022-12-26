@@ -34,6 +34,9 @@ const all_filenames = [
 	"harumachi",
 	"burger",
 	"burgir",
+	"lionheart",
+	"glorydays",
+	"bigblack",
 ];
 const attemptText = "Wrongs: ";
 const matchedText = "Cards matched: ";
@@ -66,6 +69,7 @@ const variants = {
 	"6 pairs (⭐⭐)" : {width: 4, cards: all_filenames_shuffled.slice(0, 6)}, 
 	"8 pairs (⭐⭐⭐)" : {width: 4, cards: all_filenames_shuffled.slice(0, 8)},
 	"12 pairs (⭐⭐⭐⭐)" : {width: 6, cards: all_filenames_shuffled.slice(0, 12)},
+	"4 pairs (last added) (⭐⭐)" : {width: 4, cards: all_filenames.slice(Math.max(all_filenames.length - 4, 1))},
 }
 
 
