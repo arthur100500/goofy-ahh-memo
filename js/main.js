@@ -15,7 +15,26 @@ const variantsDiv = document.querySelector("#variants");
 const delayTime = 1000;
 // should be in cards directory
 // should contain a.mp3 and i.png
-const all_filenames = ["saul", "amogus", "waltuh", "moyai", "hector", "iphone", "bonk", "glass", "avocado", "natalya", "notification", "skull", "xmax", "pufferfish", "toilet"];
+const all_filenames = [
+	"saul",
+	"amogus",
+	"waltuh",
+	"moyai",
+	"hector",
+	"iphone",
+	"bonk",
+	"glass",
+	"avocado",
+	"natalya",
+	"notification",
+	"skull",
+	"xmax",
+	"pufferfish",
+	"toilet",
+	"harumachi",
+	"burger",
+	"burgir",
+];
 const attemptText = "Wrongs: ";
 const matchedText = "Cards matched: ";
 const timeText = "Time spent: ";
